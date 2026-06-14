@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quote Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-blobs">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+  </div>
+
+  <main class="card">
+    <div class="quote-mark">"</div>
+    <blockquote id="quoteText" class="quote-text">
+      The only way to do great work is to love what you do.
+    </blockquote>
+    <cite id="quoteAuthor" class="quote-author">— Steve Jobs</cite>
+
+    <div class="tags" id="tagContainer"></div>
+
+    <div class="actions">
+      <button id="newQuoteBtn" class="btn-primary">✨ New Quote</button>
+      <button id="copyBtn"     class="btn-ghost">📋 Copy</button>
+      <a id="tweetBtn" class="btn-ghost" target="_blank" rel="noopener">🐦 Tweet</a>
+    </div>
+
+    <p class="counter"><span id="currentIdx">1</span> / <span id="totalCount">0</span></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
